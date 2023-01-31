@@ -1,0 +1,12 @@
+T__0=1
+T__1=2
+T__2=3
+T__3=4
+UNIT=5
+WORD=6
+NUMBER=7
+WS=8
+'Rezept'=1
+'Zutaten:'=2
+'Zubereitungsschritte:'=3
+'.'=4
