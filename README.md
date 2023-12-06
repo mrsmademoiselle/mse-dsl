@@ -1,13 +1,27 @@
-## EA 1.1
-Java DSL: in Training.java gebaut, in main.java beispielhaft verwendet
+# DSL
 
-## EA 2.2
-Es wurde ANTLR gewählt.
-Alles ANTLR-spezifische wurde im Ordner antlr_stuff abgelegt.  
+A small assignment to familiarize myself with Java DSL, created for my university module "modern software development".
 
-Ggf. muss die ANTLR Dependency manuell hinzugefügt werden (wenn sie oder das Plugin von ANTLR in der IDE vorher noch nicht verwendet wurde), daher habe ich sie in dem Ordner abgelegt.
-In IntelliJ geht das über File -> Project Structure -> Libraries -> + -> Java -> .jar auswählen.
+<details>
+ <summary>Peak assignment</summary>
+ 
+ 1. Build a meaningful Java DSL in the style of Expression Builders/Fluent Interfaces for your favorite domain. Of course, you can also do this in any other programming language.
 
-Die Grammatik befindet sich in Rezept.g4, alle weiteren Dateien wurden durch das ANTLR Plugin automatisch generiert.
+ 2. Play around with Xtext, ANTLR, (MPS), or other tools to create your own micro-language. There may be frameworks for this in your language. Alternatively, define keywords in your programming language, similar to what Mockito did (import static...).
+</details>
 
- Durch Ausführen der main-Methode in main.java wird der Parser beispielhaft ausgeführt.
+<hr>
+
+### Assignment part 1
+The Java DSL was built in `Training.java`. An exemplary use can be found in `main.java`
+
+
+### Assignment part 2
+For this part of the assignment, ANTLR was chosen. Everything ANTLR-specific was moved into the folder `antlr_stuff`.
+
+If the ANTLR dependency or the ANTLR plugin has not been used in this IDE before, it may need to be added manually. For this reason, I also moved it into the folder.
+In IntelliJ, you can add the dependency via `File -> Project Structure -> Libraries -> + -> Java -> <select .jar>`.
+
+The grammar can be found in `Rezept.g4`, all further files have been generated automatically by the ANTLR Plugin.
+
+You can start the parser by calling the main-function in `main.java`.
